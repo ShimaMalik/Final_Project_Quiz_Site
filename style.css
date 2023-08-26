@@ -89,6 +89,61 @@ footer img{
     padding: 50px;
 }
 
+/*About Page Style*/
+
+.whiteText{
+    color: white;
+  }
+  #contactLink{
+    color: rgb(199,73,45) ;
+    text-decoration: underline;
+  }
+
+  video{
+    width: 1000px;
+    height: auto;
+    margin-left: 10%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-color:bisque;
+      
+  }
+
+  p{
+    font-family: sans-serif;
+    color: rgb(207,191,49) ;
+    text-align: justify;
+  }
+
+  #greenText{
+    font-family: sans-serif;
+    font-weight: bold;
+    text-decoration: underline;
+    color: rgb(0,136,83);
+
+  }
+
+  #blueText{
+    font-family: sans-serif;
+    font-weight: bold;
+    text-decoration: underline;
+    color: rgb(0,114,171);
+
+  }
+
+  #orangeText{
+    font-family: sans-serif;
+    font-weight: bold;
+    text-decoration: underline;
+    color:  rgb(199,73,45);
+  }
+
+  h2{
+    margin-top: 40px;
+  }
+
+  
+
 /*Contact Us Page Style*/
 
 /*Style the text*/
@@ -146,53 +201,4 @@ input[type=submit] {
 
   }
 
-  .whiteText{
-    color: white;
-  }
-  #contactLink{
-    color: rgb(199,73,45) ;
-    text-decoration: underline;
-  }
-
-  video{
-    width: 1000px;
-    height: auto;
-    margin-left: 10%;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    border-color:bisque;
-      
-  }
-
-  p{
-    font-family: sans-serif;
-    color: rgb(207,191,49) ;
-    text-align: justify;
-  }
-
-  #greenText{
-    font-family: sans-serif;
-    font-weight: bold;
-    text-decoration: underline;
-    color: rgb(0,136,83);
-
-  }
-
-  #blueText{
-    font-family: sans-serif;
-    font-weight: bold;
-    text-decoration: underline;
-    color: rgb(0,114,171);
-
-  }
-
-  #orangeText{
-    font-family: sans-serif;
-    font-weight: bold;
-    text-decoration: underline;
-    color:  rgb(199,73,45);
-  }
-
-  h2{
-    margin-top: 40px;
-  }
+  
