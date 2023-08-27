@@ -201,4 +201,87 @@ input[type=submit] {
 
   }
 
+   /* Style the Quiz Box*/
+
+   .quizBox{
+    background: rgb(199,73,45) ;
+    width: 90%;
+    max-width:500px ;
+    margin: 100px auto 0px;
+    border-radius: 10px ;
+    padding: 30px ;
+   }
+
+  .quizBox h1{
+    font-family: sans-serif;
+    font-weight: bolder;
+    color: bisque;
+    border-bottom: 1px solid bisque;
+    padding-bottom: 10px;
+    
+  }
+
+  .quizQuestions{
+    padding: 30px;
+  }
+
+  #quizQuestions h3{
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: larger;
+    color: white;
+  }
+
+  .quizButton{
+    background-color: bisque;
+    color: rgb(199,73,45);
+    font-family: sans-serif;
+    font-weight:600;
+    width: 100%;
+    border:5px solid wheat;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 5px;
+    cursor: pointer;
+    
+  }
+
+  .quizButton:hover:not([disabled]){ /*hover will not work if button is disabled*/
+    background: rgb(199,73,45);
+    color: bisque;
+  }
+
+  #nextButton{
+    background: rgb(199,73,45);
+    color:bisque ;
+    border: 2px solid;
+    font-family: sans-serif;
+    font-weight:bold;
+    width: 200px;
+    padding: 5px;
+    margin-left: 300px;
+    margin-top: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    display: none;
   
+  }
+.quizButton :disabled{
+cursor: no-drop;
+}
+
+  #nextButton:hover{
+    background:bisque ;
+    color:rgb(199,73,45) ;
+  }
+
+  .correct{
+    background:#50C878   ;
+    color: white;
+  }
+
+  .incorrect{
+    background:rgb(210, 4, 45)  ;
+    color: white;
+  }
