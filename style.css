@@ -1,50 +1,50 @@
 /*Home Page Style*/
 
 body{
-    background-color: black;
+  background-color: black;
 }
 
 .headerLogo{
-    position: sticky;
-    top: 5px;
+  position: sticky;
+  top: 5px;
 }
 
 .headerLogo img{
-    width: 180px;
-    height: 180px;
+  width: 180px;
+  height: 180px;
 }
 
 
 .navBar{
-    position: fixed;
-    top: 0;
-    right: 0;
-    
+  position: fixed;
+  top: 0;
+  right: 0;
+  
 
 }
 
 .navBar li{
-    display: inline-block;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 50px;
-    padding-right: 50px;
+  display: inline-block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 a{
-    text-decoration: none;
-    font-family: sans-serif;
-    color: whitesmoke;
-    font-style: normal;
-    font-weight: bold;
-    
+  text-decoration: none;
+  font-family: sans-serif;
+  color: whitesmoke;
+  font-style: normal;
+  font-weight: bold;
+  
 }
 
 
 .quizMenu{
-    display: flex;
-    flex-direction: column;
-    margin-left: 35%;    
+  display: flex;
+  flex-direction: column;
+  margin-left: 35%;    
 }
 
 .quizMenu button{    
@@ -60,97 +60,109 @@ border-radius: 10px;
 }
 
 #orange{
-    background-color: rgb(199,73,45);
+  background-color: rgb(199,73,45);
 }
 
 #blue{
-    background-color: rgb(0,114,171);
+  background-color: rgb(0,114,171);
 }
 
 #yellow{
-    background-color: rgb(207,191,49);
+  background-color: rgb(207,191,49);
 }
 
 #green{
-    background-color: rgb(0,136,83);
+  background-color: rgb(0,136,83);
 }
 
 footer{
-    background-color: black;
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 120px;
-    margin-bottom: 20px;
+  background-color: black;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 120px;
+  margin-bottom: 20px;
 }
 
 footer img{
-    width: 90px;
-    height: 90px;
-    padding: 50px;
+  width: 90px;
+  height: 90px;
+  padding: 50px;
 }
 
 /*About Page Style*/
 
 .whiteText{
-    color: white;
-  }
-  #contactLink{
-    color: rgb(199,73,45) ;
-    text-decoration: underline;
-  }
+  color: white;
+}
+#contactLink{
+  color: rgb(199,73,45) ;
+  text-decoration: underline;
+}
 
-  video{
-    width: 1000px;
-    height: auto;
-    margin-left: 10%;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    border-color:bisque;
-      
-  }
+video{
+  width: 1000px;
+  height: auto;
+  margin-left: 10%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-color:bisque;
+    
+}
 
-  p{
-    font-family: sans-serif;
-    color: rgb(207,191,49) ;
-    text-align: justify;
-  }
+p{
+  font-family: sans-serif;
+  color: rgb(207,191,49) ;
+  text-align: justify;
+}
 
-  #greenText{
-    font-family: sans-serif;
-    font-weight: bold;
-    text-decoration: underline;
-    color: rgb(0,136,83);
+#greenText{
+  font-family: sans-serif;
+  font-weight: bold;
+  text-decoration: underline;
+  color: rgb(0,136,83);
 
-  }
+}
 
-  #blueText{
-    font-family: sans-serif;
-    font-weight: bold;
-    text-decoration: underline;
-    color: rgb(0,114,171);
+#blueText{
+  font-family: sans-serif;
+  font-weight: bold;
+  text-decoration: underline;
+  color: rgb(0,114,171);
 
-  }
+}
 
-  #orangeText{
-    font-family: sans-serif;
-    font-weight: bold;
-    text-decoration: underline;
-    color:  rgb(199,73,45);
-  }
+#orangeText{
+  font-family: sans-serif;
+  font-weight: bold;
+  text-decoration: underline;
+  color:  rgb(199,73,45);
+}
 
-  h2{
-    margin-top: 40px;
-  }
+h2{
+  margin-top: 40px;
+}
 
-  
+
 
 /*Contact Us Page Style*/
 
 /*Style the text*/
 input[type=text ], select, textarea {
+width: 100%; 
+padding: 12px; 
+border-radius: 5px; 
+box-sizing: border-box; /* Make sure that padding and width stays in place */
+margin-top: 6px; 
+margin-bottom: 16px; 
+font-family: sans-serif;
+font-style: italic;
+}
+
+/*Style the email*/
+input[type=email ], select, textarea {
   width: 100%; 
   padding: 12px; 
-  border-radius: 5px; 
+  border-radius: 5px; /* Rounded borders */
   box-sizing: border-box; /* Make sure that padding and width stays in place */
   margin-top: 6px; 
   margin-bottom: 16px; 
@@ -158,130 +170,118 @@ input[type=text ], select, textarea {
   font-style: italic;
 }
 
-/*Style the email*/
-input[type=email ], select, textarea {
-    width: 100%; 
-    padding: 12px; 
-    border-radius: 5px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; 
-    margin-bottom: 16px; 
-    font-family: sans-serif;
-    font-style: italic;
-  }
-  
 
 /* Style the submit button */
 input[type=submit] {
-    background-color: rgb(0,136,83);
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
+  background-color: rgb(0,136,83);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the Form*/
+.contactForm {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-left: 250px;
+  margin-right: 300px;
+  border-radius: 5px;
+  background-color: rgb(217,27,92);
+  padding: 20px;
+  color: white;
+  font-family: sans-serif;
+  font-weight: bold;
+
+}
+
+ /* Style the Quiz Box*/
+
+ .quizBox{
+  background:rgb(217,27,92) ;
+  width: 90%;
+  max-width:500px ;
+  margin: 100px auto 0px;
+  border-radius: 10px ;
+  padding: 30px ;
+ }
+
+.quizBox h1{
+  font-family: sans-serif;
+  font-weight: bolder;
+  color: bisque;
+  border-bottom: 1px solid bisque;
+  padding-bottom: 10px;
   
+}
+
+.quizQuestions{
+  padding: 30px;
+}
+
+#quizQuestions h3{
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: larger;
+  color: white;
+}
+
+.quizButton{
+  background-color: bisque;
+  color: rgb(199,73,45);
+  font-family: sans-serif;
+  font-weight:600;
+  width: 100%;
+  border:5px solid wheat;
+  padding: 10px;
+  margin: 10px 0;
+  text-align: left;
+  border-radius: 5px;
+  cursor: pointer;
   
-  input[type=submit]:hover {
-    background-color: #45a049;
-  }
-  
-  /* Style the Form*/
-  .contactForm {
-    margin-top: 100px;
-    margin-bottom: 100px;
-    margin-left: 250px;
-    margin-right: 300px;
-    border-radius: 5px;
-    background-color: rgb(217,27,92);
-    padding: 20px;
-    color: white;
-    font-family: sans-serif;
-    font-weight: bold;
+}
 
-  }
+.quizButton:hover:not([disabled]){ /*hover will not work if button is disabled*/
+  background: rgb(217,27,92);
+  color: bisque;
+}
 
-   /* Style the Quiz Box*/
+#nextButton{
+  background: rgb(217,27,92);
+  color:bisque ;
+  border: 2px solid;
+  font-family: sans-serif;
+  font-weight:bold;
+  width: 200px;
+  padding: 5px;
+  margin-left: 300px;
+  margin-top: 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  display: none;
 
-   .quizBox{
-    background: rgb(199,73,45) ;
-    width: 90%;
-    max-width:500px ;
-    margin: 100px auto 0px;
-    border-radius: 10px ;
-    padding: 30px ;
-   }
-
-  .quizBox h1{
-    font-family: sans-serif;
-    font-weight: bolder;
-    color: bisque;
-    border-bottom: 1px solid bisque;
-    padding-bottom: 10px;
-    
-  }
-
-  .quizQuestions{
-    padding: 30px;
-  }
-
-  #quizQuestions h3{
-    font-family: sans-serif;
-    font-weight: bold;
-    font-size: larger;
-    color: white;
-  }
-
-  .quizButton{
-    background-color: bisque;
-    color: rgb(199,73,45);
-    font-family: sans-serif;
-    font-weight:600;
-    width: 100%;
-    border:5px solid wheat;
-    padding: 10px;
-    margin: 10px 0;
-    text-align: left;
-    border-radius: 5px;
-    cursor: pointer;
-    
-  }
-
-  .quizButton:hover:not([disabled]){ /*hover will not work if button is disabled*/
-    background: rgb(199,73,45);
-    color: bisque;
-  }
-
-  #nextButton{
-    background: rgb(199,73,45);
-    color:bisque ;
-    border: 2px solid;
-    font-family: sans-serif;
-    font-weight:bold;
-    width: 200px;
-    padding: 5px;
-    margin-left: 300px;
-    margin-top: 10px;
-    border-radius: 3px;
-    cursor: pointer;
-    display: none;
-  
-  }
+}
 .quizButton :disabled{
 cursor: no-drop;
 }
 
-  #nextButton:hover{
-    background:bisque ;
-    color:rgb(199,73,45) ;
-  }
+#nextButton:hover{
+  background:bisque ;
+  color:rgb(217,27,92) ;
+}
 
-  .correct{
-    background:#50C878   ;
-    color: white;
-  }
+.correct{
+  background:#50C878   ;
+  color: white;
+}
 
-  .incorrect{
-    background:rgb(210, 4, 45)  ;
-    color: white;
-  }
+.incorrect{
+  background:rgb(210, 4, 45)  ;
+  color: white;
+}

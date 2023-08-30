@@ -1,42 +1,42 @@
 
-const geoQuestions=[ //Add the questions in an array of objects
+const surpriseMeQuestions=[ //Add the questions in an array of objects
     {
-        question: 'What is the longest river in the world?', //object 1 question 1
+        question: 'Which country gifted the Statue of Liberty to the USA?', //object 1 question 1
         answers:[ //answers as objects in the array
-            {text:'The Amazon River', correct: true},
-            {text:'The River Nile', correct:false},
-            {text:'The Tigris River', correct:false},
-            {text:'The River Sein', correct:false},
+            {text:'France', correct: true},
+            {text:'Spain', correct:false},
+            {text:'England', correct:false},
+            {text:'South Africa', correct:false},
         ]
     }, 
 //question 2
     {
-        question: 'What is the largest desert in the world?', 
+        question: 'What is the longest river in the world?', 
         answers:[ //answers as objects in the array
-            {text:'The Mojave Desert', correct: false},
-            {text:'The Atacama Desert', correct:false},
-            {text:'The Gobi Desert', correct:false},
-            {text:'The Sahara Desert', correct:true},
+            {text:'The River Nile', correct: false},
+            {text:'The River Sein', correct:false},
+            {text:'The Thames', correct:false},
+            {text:'The Amazon River', correct:true},
         ]
     },
     //question 3
     {
-        question: 'Where are the Pyramids of Giza Located?', 
+        question: "What is Rihanna's real name?", 
         answers:[ //answers as objects in the array
-            {text:'France', correct: false},
-            {text:'Australia', correct:false},
-            {text:'Egypt', correct:true},
-            {text:'Canada', correct:false},
+            {text:'Christen Robyn', correct: false},
+            {text:'Mercedes', correct:false},
+            {text:'Robyn Fenty', correct:true},
+            {text:'Letoya Smith', correct:false},
         ]
     },
     //question 4
     {
-        question: 'What is the capital of France?', 
+        question: 'How many wives did Henry VIII have?', 
         answers:[ //answers as objects in the array
-            {text:'France City', correct: false},
-            {text:'Alberta', correct:false},
-            {text:'Paris', correct:true},
-            {text:'Washington DC', correct:false},
+            {text:'2', correct: false},
+            {text:'4', correct:false},
+            {text:'6', correct:true},
+            {text:'8', correct:false},
         ]
     },
     //question 5
@@ -70,7 +70,7 @@ function viewQuestions(){
     // remove default questions before looping through array
     reset();
     btnNext.style.display="none";
-    let CurrentQ = geoQuestions[CurrentQuestionIndex]; //to set correct question 
+    let CurrentQ = surpriseMeQuestions[CurrentQuestionIndex]; //to set correct question 
     questionElement.innerHTML ="* " + CurrentQ.question ;
 
 //loop
@@ -122,7 +122,7 @@ function answerSelected(ans){
 
 function viewScore(){
     reset();
-    questionElement.innerHTML=`Score:${score} / ${geoQuestions.length}`;
+    questionElement.innerHTML=`Score:${score} / ${surpriseMeQuestions.length}`;
     btnNext.innerHTML='Play Again';
     btnNext.style.display='block';
 }
@@ -130,7 +130,7 @@ function viewScore(){
 
 function manipulateBtnNext(){
     CurrentQuestionIndex++;
-    if(CurrentQuestionIndex < geoQuestions.length){
+    if(CurrentQuestionIndex < surpriseMeQuestions.length){
         viewQuestions();
     }else{
         viewScore();
@@ -139,7 +139,7 @@ function manipulateBtnNext(){
 
 
 btnNext.addEventListener('click',()=>{
-    if(CurrentQuestionIndex < geoQuestions.length){
+    if(CurrentQuestionIndex <surpriseMeQuestions.length){
         manipulateBtnNext();
     }else{
         quizBegin();
@@ -147,3 +147,6 @@ btnNext.addEventListener('click',()=>{
 });
 
 quizBegin();
+
+
+

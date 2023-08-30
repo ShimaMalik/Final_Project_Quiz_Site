@@ -1,52 +1,51 @@
-
-const geoQuestions=[ //Add the questions in an array of objects
+const histQuestions=[ //Add the questions in an array of objects
     {
-        question: 'What is the longest river in the world?', //object 1 question 1
+        question: 'Which country gifted the Statue of Liberty to the USA?', //object 1 question 1
         answers:[ //answers as objects in the array
-            {text:'The Amazon River', correct: true},
-            {text:'The River Nile', correct:false},
-            {text:'The Tigris River', correct:false},
-            {text:'The River Sein', correct:false},
+            {text:'France', correct: true},
+            {text:'Spain', correct:false},
+            {text:'England', correct:false},
+            {text:'South Africa', correct:false},
         ]
     }, 
 //question 2
     {
-        question: 'What is the largest desert in the world?', 
+        question: "How many years did WW1 last?", 
         answers:[ //answers as objects in the array
-            {text:'The Mojave Desert', correct: false},
-            {text:'The Atacama Desert', correct:false},
-            {text:'The Gobi Desert', correct:false},
-            {text:'The Sahara Desert', correct:true},
+            {text:'3 years and 8 months', correct: false},
+            {text:'12 years', correct:false},
+            {text:'A decade', correct:false},
+            {text:'4 years', correct:true},
         ]
     },
     //question 3
     {
-        question: 'Where are the Pyramids of Giza Located?', 
+        question: 'How many wives did Henry VIII have?', 
         answers:[ //answers as objects in the array
-            {text:'France', correct: false},
-            {text:'Australia', correct:false},
-            {text:'Egypt', correct:true},
-            {text:'Canada', correct:false},
+            {text:'2', correct: false},
+            {text:'4', correct:false},
+            {text:'6', correct:true},
+            {text:'8', correct:false},
         ]
     },
     //question 4
     {
-        question: 'What is the capital of France?', 
+        question: "Thomas ........ invented the light bulb.", 
         answers:[ //answers as objects in the array
-            {text:'France City', correct: false},
-            {text:'Alberta', correct:false},
-            {text:'Paris', correct:true},
-            {text:'Washington DC', correct:false},
+            {text:'Lumier', correct: false},
+            {text:'Hardy', correct:false},
+            {text:'Edison', correct:true},
+            {text:'White', correct:false},
         ]
     },
     //question 5
     {
-        question: 'What is the largest country in the world?', 
+        question: 'Name a palace found in London?', 
         answers:[ //answers as objects in the array
-            {text:'The United Kingdom', correct: false},
-            {text:'Russia', correct:true},
-            {text:'South Africa', correct:false},
-            {text:'Azerbaijan', correct:false},
+            {text:'Versailles Palace', correct: false},
+            {text:'Buckingham Palace', correct:true},
+            {text:'St. Petersburg Palace', correct:false},
+            {text:'Dolmabahçe Palace', correct:false},
         ]
     }
 ];
@@ -70,7 +69,7 @@ function viewQuestions(){
     // remove default questions before looping through array
     reset();
     btnNext.style.display="none";
-    let CurrentQ = geoQuestions[CurrentQuestionIndex]; //to set correct question 
+    let CurrentQ = histQuestions[CurrentQuestionIndex]; //to set correct question 
     questionElement.innerHTML ="* " + CurrentQ.question ;
 
 //loop
@@ -122,7 +121,7 @@ function answerSelected(ans){
 
 function viewScore(){
     reset();
-    questionElement.innerHTML=`Score:${score} / ${geoQuestions.length}`;
+    questionElement.innerHTML=`Score:${score} / ${histQuestions.length}`;
     btnNext.innerHTML='Play Again';
     btnNext.style.display='block';
 }
@@ -130,7 +129,7 @@ function viewScore(){
 
 function manipulateBtnNext(){
     CurrentQuestionIndex++;
-    if(CurrentQuestionIndex < geoQuestions.length){
+    if(CurrentQuestionIndex < histQuestions.length){
         viewQuestions();
     }else{
         viewScore();
@@ -139,7 +138,7 @@ function manipulateBtnNext(){
 
 
 btnNext.addEventListener('click',()=>{
-    if(CurrentQuestionIndex < geoQuestions.length){
+    if(CurrentQuestionIndex <histQuestions.length){
         manipulateBtnNext();
     }else{
         quizBegin();
@@ -147,3 +146,10 @@ btnNext.addEventListener('click',()=>{
 });
 
 quizBegin();
+
+function openHistory() {
+    const file = document.createElement('a');
+    file.href = 'history.html';
+    file.click();
+
+}

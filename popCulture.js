@@ -1,52 +1,51 @@
-
-const geoQuestions=[ //Add the questions in an array of objects
+const popCultureQuestions=[ //Add the questions in an array of objects
     {
-        question: 'What is the longest river in the world?', //object 1 question 1
+        question: 'Which actor played Harry Potter?', //object 1 question 1
         answers:[ //answers as objects in the array
-            {text:'The Amazon River', correct: true},
-            {text:'The River Nile', correct:false},
-            {text:'The Tigris River', correct:false},
-            {text:'The River Sein', correct:false},
+            {text:'Daniel Radcliffe', correct: true},
+            {text:'Owen Wilson', correct:false},
+            {text:'Will Smith', correct:false},
+            {text:'TEd Sheeran', correct:false},
         ]
     }, 
 //question 2
     {
-        question: 'What is the largest desert in the world?', 
+        question: "What is the name of Kim and Kanye's daughter?", 
         answers:[ //answers as objects in the array
-            {text:'The Mojave Desert', correct: false},
-            {text:'The Atacama Desert', correct:false},
-            {text:'The Gobi Desert', correct:false},
-            {text:'The Sahara Desert', correct:true},
+            {text:'East West', correct: false},
+            {text:'North East', correct:false},
+            {text:'South West', correct:false},
+            {text:'North West', correct:true},
         ]
     },
     //question 3
     {
-        question: 'Where are the Pyramids of Giza Located?', 
+        question: 'Who wrote the twilight books?', 
         answers:[ //answers as objects in the array
-            {text:'France', correct: false},
-            {text:'Australia', correct:false},
-            {text:'Egypt', correct:true},
-            {text:'Canada', correct:false},
+            {text:'Victoria Aveyard', correct: false},
+            {text:'Leigh Bardugo', correct:false},
+            {text:'Stephanie Meyer', correct:true},
+            {text:'Saba Tahir', correct:false},
         ]
     },
     //question 4
     {
-        question: 'What is the capital of France?', 
+        question: "What is Rihanna's real name?", 
         answers:[ //answers as objects in the array
-            {text:'France City', correct: false},
-            {text:'Alberta', correct:false},
-            {text:'Paris', correct:true},
-            {text:'Washington DC', correct:false},
+            {text:'Christen Robyn', correct: false},
+            {text:'Mercedes', correct:false},
+            {text:'Robyn Fenty', correct:true},
+            {text:'Letoya Smith', correct:false},
         ]
     },
     //question 5
     {
-        question: 'What is the largest country in the world?', 
+        question: 'Who is the most powerful Jedi Master?', 
         answers:[ //answers as objects in the array
-            {text:'The United Kingdom', correct: false},
-            {text:'Russia', correct:true},
-            {text:'South Africa', correct:false},
-            {text:'Azerbaijan', correct:false},
+            {text:'Oni One Kanobi', correct: false},
+            {text:'Yoda', correct:true},
+            {text:'Ani Skywalker', correct:false},
+            {text:'Princess Leya', correct:false},
         ]
     }
 ];
@@ -70,7 +69,7 @@ function viewQuestions(){
     // remove default questions before looping through array
     reset();
     btnNext.style.display="none";
-    let CurrentQ = geoQuestions[CurrentQuestionIndex]; //to set correct question 
+    let CurrentQ = popCultureQuestions[CurrentQuestionIndex]; //to set correct question 
     questionElement.innerHTML ="* " + CurrentQ.question ;
 
 //loop
@@ -122,7 +121,7 @@ function answerSelected(ans){
 
 function viewScore(){
     reset();
-    questionElement.innerHTML=`Score:${score} / ${geoQuestions.length}`;
+    questionElement.innerHTML=`Score:${score} / ${popCultureQuestions.length}`;
     btnNext.innerHTML='Play Again';
     btnNext.style.display='block';
 }
@@ -130,7 +129,7 @@ function viewScore(){
 
 function manipulateBtnNext(){
     CurrentQuestionIndex++;
-    if(CurrentQuestionIndex < geoQuestions.length){
+    if(CurrentQuestionIndex < popCultureQuestions.length){
         viewQuestions();
     }else{
         viewScore();
@@ -139,7 +138,7 @@ function manipulateBtnNext(){
 
 
 btnNext.addEventListener('click',()=>{
-    if(CurrentQuestionIndex < geoQuestions.length){
+    if(CurrentQuestionIndex < popCultureQuestions.length){
         manipulateBtnNext();
     }else{
         quizBegin();
